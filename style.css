@@ -1,0 +1,387 @@
+*{
+    padding: 05;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+header{
+    width: 100%;
+position: fixed;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+z-index: 100;
+}
+#nav{
+    padding: 2vw;
+display: flex;
+align-items: center;
+justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: aliceblue;
+}
+#left{
+
+    width: 20%;
+}
+#right{
+font-size: 2vw;
+font-weight: 400;
+    width: 40%;
+    
+}
+#center{
+    width: 40%;
+    
+}
+#center input{
+    padding: 0.8vw;
+    font-size: 1.5vw;
+    width: 73%;
+border: 2px solid rgb(234, 230, 230);
+border-radius: 5px;
+margin-left: 1vw;
+}
+#center button{
+    cursor: pointer;
+    font-size: 1.5vw;
+    padding:  0.7vw;
+    width: 20%;
+    border: transparent;
+    border-radius: 5px;
+color:white;
+background-color: rgb(65, 120, 249);
+    margin-left: 1vw;
+}
+#se{
+    display: none;
+}
+#right ul{
+    position: relative;
+    list-style: none;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+}
+#right ul li{
+    cursor: pointer;
+}
+
+#icon{
+cursor: pointer;
+    padding-top: 1.5vw;
+    position: relative;
+font-size: 2.9vw;
+width: 80px;
+height: 60px;
+transition: all 0.3s linear;
+}
+#icon::after{
+    margin-top: 1vw;
+    position: absolute;
+    content: "0";
+    top:0 ;
+        right:0 ;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+#icon:hover::after{
+    background-color: rgba(255, 0,0, 0.6);
+}
+#mnu{
+    display: none;
+}
+#page{
+    padding: 4vw 6vw;
+    padding-bottom: 0.5vw;
+    width: 100%;
+    height: 100vh;
+    
+     background-color: rgb(246, 245, 245); 
+    display: flex;
+}
+#leftpage{
+    gap: 1.5vw;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    align-items: center;
+width: 60%;
+}
+#leftpage p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#leftpage h1{
+    font-weight: 600;
+    font-size: 5vw;
+}
+#leftpage button{
+    width: fit-content;
+    margin-top: 2vw;
+    border: transparent;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    padding: 0.7vw;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#leftpage button:hover{
+    
+    padding:0.7vw 0.5vw;
+
+}
+
+#rightpage{
+    margin-top: 2.5vw;
+width: 40%;
+
+}
+#rightpage img{
+    object-position: center;
+    width: 100%;
+    height: 100%;    
+}
+#page1{
+    padding: 5vw 0 3vw 0 ;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(246, 245, 245);
+}
+#page1 h1{
+font-size: 3vw;
+}
+#page1 #in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+width: 100%;
+height: 90%;
+
+}
+.card{
+    border-radius: 20px;
+    font-size: 3vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 250px;
+    height: 250px;
+    background-color: rgb(68, 68, 246);
+}
+#page2{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-row-gap: 5vw;
+    grid-column-gap: 5vw;
+    padding: 5vw 5vw 3vw 5vw;
+    width: 100%;
+    height: auto;
+    
+    background-color: rgb(246, 245, 245);
+    
+}
+#card{
+   
+    padding: 2vw;
+    width: 100%;
+height: 100%;
+box-shadow: rgba(149, 157, 165, 0.2) 10px 15px 24px, rgba(149, 157, 165, 0.2) -10px -15px 24px;
+background-color: rgb(246, 245, 245);
+
+border-radius: 20px;
+ 
+
+}
+#card img{
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 65%;
+}
+#card p{
+    margin-top: 1vw;
+    font-size: 1.8vw;
+    font-weight: 500;
+
+}
+#card h1{
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-weight: 600;
+}
+#card button{
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-top: 1vw;
+    padding: 0.8vw 2vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    transition: all 0.3s linear;
+}
+#card button:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+#card button i{
+    margin-right: 1vw;
+}
+#last{
+    background-color: rgb(246, 245, 245);
+    padding: 1.5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+ #last #button{
+    cursor: pointer;
+    font-size: 1.5vw;
+    border:2px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(2, 139, 237,0.7);
+    color: white;
+    width: fit-content;
+    padding: 0.9vw 1.4vw;
+transition: all 0.4s linear;
+    
+}
+#last #button:hover{
+    background-color: rgba(2, 139, 237,1);
+}
+@media (max-width:600px) {
+
+    #left{
+           width: 20%;
+    }
+    #center{
+        width: 65%;
+    
+    }
+    #right{
+
+           width: 20%; 
+        }
+    #center input{
+        display: none;
+}
+    #center button{
+    display: none;
+
+}
+#se{
+    font-weight: 600;
+    display: block;
+    margin-left: 85%;
+    font-size: 6vw;
+}
+    #right ul li{
+        display: none;
+    }
+    #icon{
+
+        margin-bottom: 30%;
+        font-size: 7.5vw;
+        margin-left:-115%;
+        width: fit-content;
+        height: auto;
+        }
+        #icon::after{
+            font-size: 3vw;
+            height: 16px;
+            width: 16px;
+            
+        }
+        
+    #mnu{
+        display: block;
+        font-size: 5.5vw;
+        margin-left: 10%;
+        font-weight: 600;
+    }
+    #page{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #leftpage{
+        gap: 2.5vw;        
+    width: 100%;
+    height: 30%;
+    }
+    #leftpage p{
+        font-size: 3.5vw;
+    }
+    #leftpage h1{
+        font-size: 7vw;
+    }
+    #leftpage button{
+        font-size: 2.5vw;
+        padding: 1.7vw;
+    }
+    #rightpage{
+    width: 100%;
+    height: 60%;
+    }
+    #page1{
+        height: auto;
+ }
+    #page1 h1{
+    font-size: 6vw;
+    }
+    #page1 #in{
+        margin: 4vw 0vw;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    .card{
+        font-size: 5vw;
+        width: 150px;
+        height: 150px;
+    }
+    #page2{
+           grid-template-columns: repeat(1 ,1fr);
+        height: auto;
+}
+    #card p{
+        margin-top: 1.5vw;
+        font-size: 3.8vw;
+    
+    }
+    #card h1{
+        margin-top: 2vw;
+        font-size: 7.5vw;
+    }
+    #card button{
+        margin-top: 3vw;
+        padding: 1.8vw 4vw;
+        border-radius: 5px;
+        font-size: 4.5vw;
+    }
+    #card button i{
+        margin-right: 1.5vw;
+    }
+     #last #button{
+         font-size: 4vw;
+     padding: 1.9vw 2.4vw;
+       
+    }
+    #last #button:hover{
+        background-color: rgba(2, 139, 237,1);
+    }
+}
